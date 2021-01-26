@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* https://furbo.org/2018/03/28/system-fonts-in-css/ */
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+#avatar img {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+#name {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#name p {
+    margin: 0;
+    padding: 0 4px;
+}
+
+#social {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#social a {
+    color: blueviolet;
+    margin: 0 10px;
+    font-size: 0.7em;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#logos img {
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#name {
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+    0% { color: black; }
+    50% { color: blueviolet; }
+    100% { color: black; }
+}
+
+/* div { border: 1px solid black; } */
