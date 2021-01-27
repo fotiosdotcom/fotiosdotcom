@@ -1,69 +1,70 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
 }
 
 body {
-    /* https://furbo.org/2018/03/28/system-fonts-in-css/ */
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-weight: bolder;
-    font-size: 2em;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
+    font-family: 'Chakra Petch', sans-serif; font-size: 32px;
 }
 
+#container {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+#avatar {
+    display: flex; justify-content: center;
+
+    margin-top: 20px;
+}
 #avatar img {
-    border-radius: 50%;
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+
+    border-radius: 50%;
+
+    border: 4px solid blueviolet;
+    padding: 4px;
+    background-clip: content-box;
+    background-color: #FFF;
+
+    width: 180px; height: 180px;
 }
 
 #name {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-}
+    display: flex; flex-direction: row; justify-content: center;
 
+    margin-top: 30px;
+
+    animation: color-change 3s infinite alternate linear;
+}
 #name p {
-    margin: 0;
-    padding: 0 4px;
+    margin: 0; padding: 0 4px;
 }
 
 #social {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-}
+    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
 
+    margin-top: 10px;
+}
 #social a {
-    color: blueviolet;
-    margin: 0 10px;
     font-size: 0.7em;
+    color: blueviolet;
+
+    margin: 0 10px;
 }
 
 #logos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
 
+    margin-top: 30px; margin-bottom: 20px;
+}
 #logos img {
-    margin: 0 10px;
-    width: 100px;
-    height: 100px;
+    width: 90px; height: 90px;
+
+    margin: 0 6px;
 }
 
-#name {
-    animation: color-change 2s infinite;
+@media only screen and (max-width: 320px) {
+
 }
 
 @keyframes color-change {
@@ -72,4 +73,6 @@ body {
     100% { color: black; }
 }
 
-/* div { border: 1px solid black; } */
+.colorize {
+    filter: brightness(0);
+}
