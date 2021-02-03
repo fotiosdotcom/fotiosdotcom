@@ -34,22 +34,29 @@ img {
     margin: 14px;
 }
 
-#cards img {
+#cards .front, #cards .back, #cards img {
     border-radius: 4px;
 }
 
+#cards .front, #cards .back {
+    -webkit-box-shadow: 0px 0px 4px 0px #666; box-shadow: 0px 0px 4px 0px #666;
+}
+
 #cards .front img {
-    object-fit: cover;
-    height: 100%; width: 200px; /* 100% */
+    /* 1500 x 2100 */
+    width: 225px; height: 315; /* 21% */
 }
 
 #cards .back img {
-    object-fit: cover;
-    height: 100%; width: 100px; /* 50% */
+    width: 120px; height: 168; /* 8% */
+}
+
+#cards .front {
+    z-index: 2;
 }
 
 #cards .back {
-    height: 50%;
+    z-index: 1;
     align-self: flex-end;
-    margin-left: 10px;
+    margin-left: -6px; margin-bottom: 6px;
 }
