@@ -1,0 +1,55 @@
+html, body, p {
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif; font-size: 32px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+#info {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 10px;
+}
+#info p {
+    font-size: 20px;
+    align-self: center;
+    padding: 4px;
+}
+
+#cards {
+    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+}
+
+#cards .card {
+    display: flex; flex-direction: row; justify-content: center;
+    margin: 14px;
+}
+
+#cards img {
+    border-radius: 4px;
+}
+
+#cards .front img {
+    object-fit: cover;
+    height: 100%; width: 200px; /* 100% */
+}
+
+#cards .back img {
+    object-fit: cover;
+    height: 100%; width: 100px; /* 50% */
+}
+
+#cards .back {
+    height: 50%;
+    align-self: flex-end;
+    margin-left: 10px;
+}
