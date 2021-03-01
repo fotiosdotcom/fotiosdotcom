@@ -56,7 +56,10 @@ img {
 }
 
 #cards .back {
+    /* transform: perspective(1000px) rotateY(-25deg); */
+    /* transform: rotate(5deg); */
+
     z-index: 1;
     align-self: flex-end;
-    margin-left: -6px; margin-bottom: 6px;
+    margin-left: -12px; margin-bottom: 6px;
 }
