@@ -26,10 +26,17 @@ img {
     display: flex; flex-direction: column; justify-content: center;
 }
 
+#avatar #avatar-se { display: block;}
+#avatar #avatar-le { display: none; }
+@media (prefers-color-scheme: dark) {
+    #avatar #avatar-se { display: none;}
+    #avatar #avatar-le { display: block; }
+}
+
 #avatar {
     display: flex; justify-content: center;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #avatar img {
     border-radius: 50%;
