@@ -91,7 +91,7 @@ img {
     }
 }
 
-#companies, #other, #investing {
+#companies, #other {
     display: flex; flex-direction: column;
 
     margin-top: 10px;
@@ -104,7 +104,7 @@ img {
 
 #companies a { color: blueviolet; }
 #other a { color: orangered; }
-#investing a { color: green; }
+#investing a { color: green; text-decoration: none; }
 @media (prefers-color-scheme: dark) {
     #companies a { color: violet; }
     #other a { color: orange; }
@@ -118,7 +118,7 @@ img {
     border-bottom: 2px solid #666;
 }
 
-#random, #influencers, #reports {
+#random, #influencers, #reports, #investing {
     display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
     margin-top: 20px;
     padding: 0px 10px;
