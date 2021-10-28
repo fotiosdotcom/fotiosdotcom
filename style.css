@@ -21,6 +21,8 @@ img {
     vertical-align: middle;
 }
 
+a { text-decoration: none; }
+
 #container {
     min-height: 100vh;
     display: flex; flex-direction: column; justify-content: center;
@@ -93,7 +95,6 @@ img {
 
 #companies, #other {
     display: flex; flex-direction: column;
-
     margin-top: 10px;
 }
 #companies a, #other a, #investing a {
@@ -104,7 +105,7 @@ img {
 
 #companies a { color: blueviolet; }
 #other a { color: orangered; }
-#investing a { color: green; text-decoration: none; }
+#investing a { color: green; }
 @media (prefers-color-scheme: dark) {
     #companies a { color: violet; }
     #other a { color: orange; }
@@ -113,7 +114,7 @@ img {
 
 #random #doge img { height: 50px; width: auto; margin-left: -15px; transform: translateZ(0); }
 #random #enfp img { height: 100px; width: auto; margin-bottom: -2px; }
-#random #intj img  { height: 100px; width: auto; margin-bottom: -1px; }
+#random #elon img  { height: 100px; width: auto; margin-bottom: -1px; }
 
 #random {
     align-items: flex-end;
