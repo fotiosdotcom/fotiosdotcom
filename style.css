@@ -93,6 +93,10 @@ a { text-decoration: none; }
     }
 }
 
+#companies p {
+    text-align: center;
+    font-size: 11px;
+}
 #companies, #other {
     display: flex; flex-direction: column;
     margin-top: 10px;
@@ -104,7 +108,7 @@ a { text-decoration: none; }
 }
 
 #companies a { color: blueviolet; }
-#other a { color: orangered; }
+#other a { color: royalblue; }
 #investing a { color: green; }
 @media (prefers-color-scheme: dark) {
     #companies a { color: violet; }
