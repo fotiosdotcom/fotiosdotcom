@@ -95,7 +95,7 @@ a { text-decoration: none; }
 
 #companies p {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
 }
 #companies, #other {
     display: flex; flex-direction: column;
@@ -103,7 +103,7 @@ a { text-decoration: none; }
 }
 #companies a, #other a, #investing a {
     text-align: center;
-    font-size: 13px;
+    font-size: 20px;
     padding: 4px;
 }
 
@@ -190,11 +190,11 @@ a { text-decoration: none; }
 }
 
 .colorize {
-    filter: brightness(0);
+    /* filter: brightness(0); */
 }
 
 @media (prefers-color-scheme: dark) {
-    .colorize {
+    /* .colorize {
         filter: brightness(100);
-    }
+    } */
 }
