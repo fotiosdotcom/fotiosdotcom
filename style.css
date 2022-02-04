@@ -125,7 +125,7 @@ a { text-decoration: none; }
     border-bottom: 2px solid #666;
 }
 
-#random, #influencers, #reports, #investing {
+#random, #influencers, #reports, #books, #investing {
     display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
     margin-top: 20px;
     padding: 0px 10px;
@@ -147,9 +147,9 @@ a { text-decoration: none; }
 
 #reports a {
     /* font-size: 13px; */
-    padding: 4px;
+    padding: 0 4px 0px 4px;
 }
-#reports img {
+#reports img, #books img {
     -webkit-box-shadow: 0px 0px 2px 0px #666; box-shadow: 0px 0px 2px 0px #666;
     /* object-fit: cover; */
     height: 100px;
