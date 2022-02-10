@@ -169,7 +169,7 @@ a { text-decoration: none; }
     width: 90px; height: 90px;
     /* fill: blueviolet; */
     /* color: blueviolet; */
-    margin: 0 6px;
+    margin: 0px 0px;
 }
 
 @media only screen and (max-width: 320px) {
