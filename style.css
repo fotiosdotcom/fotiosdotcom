@@ -145,7 +145,7 @@ a { text-decoration: none; }
     width: 60px; height: 60px;
 }
 
-#reports a {
+#reports a, #books a {
     /* font-size: 13px; */
     padding: 0 4px 0px 4px;
 }
