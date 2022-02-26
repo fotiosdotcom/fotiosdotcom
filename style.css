@@ -103,7 +103,7 @@ a { text-decoration: none; }
 }
 #companies a, #other a, #investing a {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     padding: 4px;
 }
 
@@ -150,7 +150,7 @@ a { text-decoration: none; }
     padding: 0 4px 0px 4px;
 }
 #reports img, #books img {
-    -webkit-box-shadow: 0px 0px 2px 0px #666; box-shadow: 0px 0px 2px 0px #666;
+    -webkit-box-shadow: 0px 0px 0px 0px #666; box-shadow: 0px 0px 2px 0px #666;
     /* object-fit: cover; */
     height: 100px;
     /* border: 1px solid black; */
@@ -158,18 +158,21 @@ a { text-decoration: none; }
     /* overflow: hidden; */
 }
 
-#logos {
+.logos {
     display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
     /* fill: blueviolet; */
     /* color: blueviolet; */
-
-    /* margin: 20px; */
+    margin: 10px;
 }
-#logos img {
+.logos img {
     width: 90px; height: 90px;
     /* fill: blueviolet; */
     /* color: blueviolet; */
     margin: 0px 0px;
+}
+
+.logos.secondary img {
+    width: 60px; height: 60px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -190,11 +193,11 @@ a { text-decoration: none; }
 }
 
 .colorize {
-    /* filter: brightness(0); */
+    filter: brightness(0);
 }
 
 @media (prefers-color-scheme: dark) {
-    /* .colorize {
+    .colorize {
         filter: brightness(100);
-    } */
+    }
 }
