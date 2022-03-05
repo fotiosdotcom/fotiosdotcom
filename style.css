@@ -147,7 +147,8 @@ a { text-decoration: none; }
 
 #reports a, #books a {
     /* font-size: 13px; */
-    padding: 0 4px 0px 4px;
+    margin-top: -10px;
+    padding: 0px 4px 0px 4px;
 }
 #reports img, #books img {
     -webkit-box-shadow: 0px 0px 0px 0px #666; box-shadow: 0px 0px 2px 0px #666;
