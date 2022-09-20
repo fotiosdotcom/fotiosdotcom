@@ -1,15 +1,20 @@
-html, body, p {
-    margin: 0; padding: 0;
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Chakra Petch', sans-serif; font-size: 32px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 32px;
 }
 
 body {
     color: black;
     background-color: #FFF;
 }
+
 @media (prefers-color-scheme: dark) {
     body {
         color: white;
@@ -21,25 +26,42 @@ img {
     vertical-align: middle;
 }
 
-a { text-decoration: none; }
+a {
+    text-decoration: none;
+}
 
 #container {
     min-height: 100vh;
-    display: flex; flex-direction: column; justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#avatar #avatar-se { display: block;}
-#avatar #avatar-le { display: none; }
+#avatar #avatar-se {
+    display: block;
+}
+
+#avatar #avatar-le {
+    display: none;
+}
+
 @media (prefers-color-scheme: dark) {
-    #avatar #avatar-se { display: none;}
-    #avatar #avatar-le { display: block; }
+    #avatar #avatar-se {
+        display: none;
+    }
+
+    #avatar #avatar-le {
+        display: block;
+    }
 }
 
 #avatar {
-    display: flex; justify-content: center;
+    display: flex;
+    justify-content: center;
 
     margin-top: 30px;
 }
+
 #avatar img {
     border-radius: 50%;
 
@@ -48,7 +70,8 @@ a { text-decoration: none; }
     background-clip: content-box;
     background-color: #FFF;
 
-    width: 180px; height: 180px;
+    width: 180px;
+    height: 180px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,13 +81,16 @@ a { text-decoration: none; }
 }
 
 #name {
-    display: flex; flex-direction: row; justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     margin-top: 30px;
 
     color: black;
     /* animation: color-change 3s infinite alternate linear; */
 }
+
 @media (prefers-color-scheme: dark) {
     #name {
         color: white;
@@ -75,11 +101,27 @@ a { text-decoration: none; }
     padding: 0 4px;
 }
 
+#wisdom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#wisdom p {
+    font-size: 10px;
+    color: gray;
+}
+
 #social {
-    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 
     margin-top: 10px;
 }
+
 #social a {
     font-size: 22px;
     color: blueviolet;
@@ -93,45 +135,104 @@ a { text-decoration: none; }
     }
 }
 
-#companies p {
+#companies,
+#investments,
+#other {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#investments h1 {
+    color: firebrick;
+    text-align: center;
+    font-size: 14px;
+}
+
+#companies p,
+#investments p {
     text-align: center;
     font-size: 12px;
 }
-#companies, #other {
-    display: flex; flex-direction: column;
-    margin-top: 10px;
-}
-#companies a, #other a, #investing a {
+
+#companies a,
+#other a,
+#investing a {
     text-align: center;
     font-size: 18px;
     padding: 4px;
 }
 
-#companies a { color: blueviolet; }
-#other a { color: royalblue; }
-#investing a { color: green; }
-@media (prefers-color-scheme: dark) {
-    #companies a { color: violet; }
-    #other a { color: orange; }
-    #investing a { color: greenyellow; }
+#companies a {
+    color: blueviolet;
 }
 
-#random #doge img { height: 50px; width: auto; margin-left: -15px; transform: translateZ(0); }
-#random #enfp img { height: 100px; width: auto; margin-bottom: -2px; }
-#random #elon img  { height: 100px; width: auto; margin-bottom: -1px; }
+#other a {
+    color: royalblue;
+}
+
+#investing a {
+    color: green;
+}
+
+@media (prefers-color-scheme: dark) {
+    #companies a {
+        color: violet;
+    }
+
+    #other a {
+        color: orange;
+    }
+
+    #investing a {
+        color: greenyellow;
+    }
+}
+
+#random #doge img {
+    height: 50px;
+    width: auto;
+    margin-left: -15px;
+    transform: translateZ(0);
+}
+
+#random #enfp img {
+    height: 100px;
+    width: auto;
+    margin-bottom: -2px;
+}
+
+#random #elon img {
+    height: 100px;
+    width: auto;
+    margin-bottom: -1px;
+}
 
 #random {
     align-items: flex-end;
     border-bottom: 2px solid #666;
 }
 
-#random, #influencers, #reports, #books, #investing {
-    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+#random,
+#influencers,
+#reports,
+#books,
+#investing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0px 10px;
 }
-#random, #influencers, #reports, #books, #investing {
+
+#random,
+#influencers,
+#reports,
+#books,
+#investing {
     margin-top: 20px;
 }
+
 #reports {
     margin-top: 40px;
 }
@@ -139,6 +240,7 @@ a { text-decoration: none; }
 #influencers a {
     padding: 4px;
 }
+
 #influencers img {
     border-radius: 50%;
 
@@ -147,16 +249,21 @@ a { text-decoration: none; }
     background-clip: content-box;
     background-color: #FFF;
 
-    width: 60px; height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
-#reports a, #books a {
+#reports a,
+#books a {
     /* font-size: 13px; */
     margin-top: -10px;
     padding: 0px 6px 0px 6px;
 }
-#reports img, #books img {
-    -webkit-box-shadow: 0px 0px 0px 0px #666; box-shadow: 0px 0px 2px 0px #666;
+
+#reports img,
+#books img {
+    -webkit-box-shadow: 0px 0px 0px 0px #666;
+    box-shadow: 0px 0px 2px 0px #666;
     /* object-fit: cover; */
     height: 100px;
     /* border: 1px solid black; */
@@ -165,36 +272,57 @@ a { text-decoration: none; }
 }
 
 .logos {
-    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     /* fill: blueviolet; */
     /* color: blueviolet; */
     margin: 10px;
 }
+
 .logos img {
-    width: 90px; height: 90px;
+    width: 90px;
+    height: 90px;
     /* fill: blueviolet; */
     /* color: blueviolet; */
     margin: 0px 0px;
 }
 
 .logos.secondary img {
-    width: 60px; height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
-@media only screen and (max-width: 320px) {
-
-}
+@media only screen and (max-width: 320px) {}
 
 @keyframes color-change {
-    0% { color: black; }
-    50% { color: blueviolet; }
-    100% { color: black; }
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: blueviolet;
+    }
+
+    100% {
+        color: black;
+    }
 }
+
 @media (prefers-color-scheme: dark) {
     @keyframes color-change {
-        0% { color: white; }
-        50% { color: violet; }
-        100% { color: white; }
+        0% {
+            color: white;
+        }
+
+        50% {
+            color: violet;
+        }
+
+        100% {
+            color: white;
+        }
     }
 }
 
