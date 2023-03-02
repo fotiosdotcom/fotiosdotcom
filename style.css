@@ -149,6 +149,12 @@ a {
     font-size: 14px;
 }
 
+.items h1 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 14px;
+}
+
 #companies p,
 #investments p {
     text-align: center;
@@ -271,7 +277,8 @@ a {
     /* overflow: hidden; */
 }
 
-.logos {
+.logos,
+.items ol {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -292,6 +299,33 @@ a {
 .logos.secondary img {
     width: 60px;
     height: 60px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6px;
+    text-align: center;
+}
+
+.item p {
+    font-size: 10px;
+    color: blueviolet;
+    padding: 4px;
+}
+
+.item img {
+    width: 90px;
+    height: auto;
+    margin: 0px 0px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
 }
 
 @media only screen and (max-width: 320px) {}
