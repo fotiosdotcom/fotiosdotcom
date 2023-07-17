@@ -150,7 +150,7 @@ a {
 }
 
 .items h1 {
-    color: blueviolet;
+    color: darkorange;
     text-align: center;
     font-size: 14px;
 }
@@ -311,7 +311,7 @@ a {
 
 .item p {
     font-size: 10px;
-    color: blueviolet;
+    color: darkorange;
     padding: 4px;
 }
 
